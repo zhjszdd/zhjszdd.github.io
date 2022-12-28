@@ -1,40 +1,77 @@
 @charset "utf-8";
-*{
-	padding: 0px;
-	margin: 0px;
-	line-height: 20px;
+/* CSS Document */
+h1 {
+	font-size:42px;
 }
-body{
-	height: 100%;
-	background-color: #f3f1e9;
-	position: relative
+h1, h2, p {
+	color:#b58726;
+	font-family:"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-img{
-	border: 0px;
+p {
+	font-size:12px;
+	font-family:"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:24px;
 }
-main_block{
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-size: 12px;
-	color: #464646;
-	overflow: hidden;
-	float: left;
-	width: 752px;
+body {
+	background:#FFD265 url(../images/body_bg.png) repeat-y center top;
+	font-family:"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.content_main{
-	width: 720px;
-	float: left;
-	padding: 20px 0 10px 20px;
+.left {
+	padding-top:100px;
+	text-align:center;
+	position:relative;
 }
-.box_details{
-	padding: 10px 0 10px 0;
-	margin: 10px 20px 10px 0;
-	clear: both;
+.left ul a {
+	color:#b58726;
+	height:44px;
+	width:74px;
+	display:block;
 }
-.box_details p{
-	padding: 5px 15px 5px 15px;
-	text-indent: 2em
+.left ul li {
+	list-style:none;
+	margin-bottom:12px;
+	width:74px;
+	height:44px;
+	line-height:44px;
 }
-img.right{
-	float: right;
-	padding: 0 0 0 30px;
+.right img.span3{padding:12px;}
+.hear {
+	background:#FFF url(../images/title_bg.png) no-repeat left center;
 }
+.left ul {
+	margin-left: 397px;
+}
+.left ul li a:hover {
+	background:#FFF url(../images/title_bg.png) no-repeat left center;
+	height: 44px;
+	line-height: 44px;
+	width:74px;
+	margin-bottom:12px
+}
+.tx {
+	position:absolute;
+	top:250px;
+	left:180px;
+}
+.jianjie img{margin:12px;}
+.right {
+	padding-top:100px;
+}
+.right h2 {
+	background:#FFF url(../images/right_bg.png) repeat-x center;
+	line-height:50px;
+	padding-left:20px;
+	font-size:16px;
+}
+.footer {
+	background:#FFF url(../images/right_bg.png) repeat-x center;
+	font-size:12px;
+	margin-bottom:0px;
+	line-height:50px;
+	color:#b58726;
+	text-align:center;
+}
+.thumbnails {
+	margin-top:70px;
+}
+form{ font-size:12px; color:#B58726;}
