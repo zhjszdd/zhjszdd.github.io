@@ -1,0 +1,99 @@
+
+<html>
+<head>
+<title>高度自适应的三行两列宽度固定布局</title>
+<style type="text/css">
+* {
+	margin:0 auto;
+	padding-left:100;
+	padding-right:100;
+	padding-top:10;
+	padding-bottom:10;
+}
+body {
+	font-family:"华文细黑";
+	font-size:20px;
+	color: white
+}/*设置页面全局参数*/
+#wrap {
+	margin:0 auto;
+	width:1000px;
+}/*设置页面容器的宽度，并居中放置*/
+#header {
+	height:400px;
+	width:1000px;
+	background:#EE1317;
+	margin-bottom:20px;
+}/*设置页面头部信息区域*/
+#oneBox {
+	float:left;/*因为是固定宽度，采用浮动方法可避免ie 3像素bug*/
+	width:200px;
+	background:#E7EB10;
+	height:100px;
+}/*设置页面主内容区域*/
+#twoBox {
+	float:right;
+	width:250px;
+	background:#1C88DA;
+	height:100px;
+}/*设侧边栏区域*/
+#threeBox {
+	float:none;
+	width:800px;
+	background:#010101;
+	height:100px;
+}/*设侧边栏区域*/
+#container {
+	height:400px;
+	width:1000px;
+	background:#0FF23A;
+	margin-bottom:20px;
+}/*设置页面中部区域*/
+#mainBox {
+	float:left;/*因为是固定宽度，采用浮动方法可避免ie 3像素bug*/
+	width:250px;
+	background:#0B1BEE;
+	height:300px;
+}/*设置页面主内容区域*/
+#sideBox {
+	float:right;
+	width:250px;
+	background:#1C88DA;
+	height:300px;
+}/*设侧边栏区域*/
+#footer {
+	clear:both;
+	width:1000px;
+	height:50px;
+	background:#f96;
+}/*设置页面底部区域*/
+</style>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="header">
+	  <p>div->header</p>
+	  <div id="oneBox">
+		  <p>div->id=logo</p>
+	  </div>
+	  <div id="twoBox">
+		  <p>div->id=banner</p>
+	  </div><br/><br/><br/><br/><br/><br/>
+	  <div id="threeBox">
+		  <p>div->id=menu</p>
+	  </div>
+    </div>
+  <div id="container">
+	  <p>div->id=main 包含下面2个div(sidebar,content)</p>
+    <div id="mainBox">
+      <p>div->id=sidebar</p>
+    </div>
+    <div id="sideBox">
+      <p>div->id=content</p>
+    </div>
+  </div>
+  <div id="footer">div->id=footer</div>
+</div>
+</body>
+</html>
